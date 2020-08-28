@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6394E63424F96A150086A445 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6394E63324F96A150086A445 /* SearchViewController.swift */; };
 		63EAAFCF24F9686E00EB11F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAAFCE24F9686E00EB11F2 /* AppDelegate.swift */; };
 		63EAAFD124F9686E00EB11F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAAFD024F9686E00EB11F2 /* SceneDelegate.swift */; };
-		63EAAFD324F9686E00EB11F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EAAFD224F9686E00EB11F2 /* ViewController.swift */; };
-		63EAAFD624F9686E00EB11F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EAAFD424F9686E00EB11F2 /* Main.storyboard */; };
 		63EAAFD824F9687000EB11F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EAAFD724F9687000EB11F2 /* Assets.xcassets */; };
 		63EAAFDB24F9687000EB11F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EAAFD924F9687000EB11F2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6394E63324F96A150086A445 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		63EAAFCB24F9686E00EB11F2 /* iTunesSearchAPIUnitTestGuidedProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchAPIUnitTestGuidedProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EAAFCE24F9686E00EB11F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EAAFD024F9686E00EB11F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63EAAFD224F9686E00EB11F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63EAAFD524F9686E00EB11F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63EAAFD724F9687000EB11F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63EAAFDA24F9687000EB11F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63EAAFDC24F9687000EB11F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +35,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6394E63124F969FA0086A445 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		6394E63224F96A010086A445 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6394E63324F96A150086A445 /* SearchViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		63EAAFC224F9686E00EB11F2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +69,63 @@
 		63EAAFCD24F9686E00EB11F2 /* iTunesSearchAPIUnitTestGuidedProject */ = {
 			isa = PBXGroup;
 			children = (
-				63EAAFCE24F9686E00EB11F2 /* AppDelegate.swift */,
-				63EAAFD024F9686E00EB11F2 /* SceneDelegate.swift */,
-				63EAAFD224F9686E00EB11F2 /* ViewController.swift */,
-				63EAAFD424F9686E00EB11F2 /* Main.storyboard */,
-				63EAAFD724F9687000EB11F2 /* Assets.xcassets */,
-				63EAAFD924F9687000EB11F2 /* LaunchScreen.storyboard */,
-				63EAAFDC24F9687000EB11F2 /* Info.plist */,
+				63EAAFE224F968B000EB11F2 /* Model */,
+				63EAAFE324F968B600EB11F2 /* View */,
+				63EAAFE424F968BB00EB11F2 /* Controller */,
+				63EAAFE524F968C400EB11F2 /* Support */,
 			);
 			path = iTunesSearchAPIUnitTestGuidedProject;
+			sourceTree = "<group>";
+		};
+		63EAAFE224F968B000EB11F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63EAAFE324F968B600EB11F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63EAAFE624F968E300EB11F2 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63EAAFE424F968BB00EB11F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6394E63124F969FA0086A445 /* Model Controller */,
+				6394E63224F96A010086A445 /* View Controllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63EAAFE524F968C400EB11F2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				63EAAFE724F9690900EB11F2 /* App Lifecycle */,
+				63EAAFD724F9687000EB11F2 /* Assets.xcassets */,
+				63EAAFDC24F9687000EB11F2 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		63EAAFE624F968E300EB11F2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				63EAAFD924F9687000EB11F2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		63EAAFE724F9690900EB11F2 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				63EAAFCE24F9686E00EB11F2 /* AppDelegate.swift */,
+				63EAAFD024F9686E00EB11F2 /* SceneDelegate.swift */,
+			);
+			path = "App Lifecycle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +188,6 @@
 			files = (
 				63EAAFDB24F9687000EB11F2 /* LaunchScreen.storyboard in Resources */,
 				63EAAFD824F9687000EB11F2 /* Assets.xcassets in Resources */,
-				63EAAFD624F9686E00EB11F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63EAAFD324F9686E00EB11F2 /* ViewController.swift in Sources */,
+				6394E63424F96A150086A445 /* SearchViewController.swift in Sources */,
 				63EAAFCF24F9686E00EB11F2 /* AppDelegate.swift in Sources */,
 				63EAAFD124F9686E00EB11F2 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63EAAFD424F9686E00EB11F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63EAAFD524F9686E00EB11F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63EAAFD924F9687000EB11F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7DFWNNEL3;
-				INFOPLIST_FILE = iTunesSearchAPIUnitTestGuidedProject/Info.plist;
+				INFOPLIST_FILE = iTunesSearchAPIUnitTestGuidedProject/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.chadarutherford.iTunesSearchAPIUnitTestGuidedProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P7DFWNNEL3;
-				INFOPLIST_FILE = iTunesSearchAPIUnitTestGuidedProject/Info.plist;
+				INFOPLIST_FILE = iTunesSearchAPIUnitTestGuidedProject/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.chadarutherford.iTunesSearchAPIUnitTestGuidedProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
