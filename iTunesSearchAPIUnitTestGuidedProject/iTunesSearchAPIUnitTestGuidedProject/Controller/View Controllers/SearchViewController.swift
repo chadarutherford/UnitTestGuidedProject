@@ -35,12 +35,15 @@ class SearchViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .systemBackground
-		title = "iTunes Search"
 		configureUI()
 	}
 	
+	private func setupTableView() {
+		title = "iTunes Search"
+	}
+	
 	private func configureUI() {
+		view.backgroundColor = .systemBackground
 		view.addSubview(resultTypeSegmentedControl)
 		view.addSubview(searchBar)
 		view.addSubview(tableView)
